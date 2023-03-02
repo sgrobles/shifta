@@ -1,0 +1,280 @@
+
+
+/* No borrar para similar móvil */
+body {  
+  /*max-width: 375px; limites mbl version*/
+  /*min-width: 375px; limites mbl version*/
+  font-family: 'Montserrat', sans-serif;
+  
+  /* El borde es solo para visualizar límites */
+ /* border: 1px solid #ddd; /*limites mbl version*/
+ 
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+
+.card-img{
+  
+ object-position: inherit;
+}
+
+h1{
+  width: fit-content;
+  min-width: 50%;
+}
+
+p {
+  width: fit-content;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+a{
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  color: black;
+}
+
+.bloque-user {
+  flex-wrap: wrap;
+  /*display: inline-block;*/
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  padding:24px;
+  border-block-end: 1px solid #000;
+}
+.bloque-user a{
+  border: 1px solid black;
+  color: #78C0A8;
+  padding:  12px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.bloque-icon {
+  flex-wrap: wrap;
+  /*display: inline-block;*/
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+  padding:24px;
+ 
+}
+.bloque-producto {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+  }
+.product-detail-price {
+  font-size: 2rem;
+  }
+.container-price{
+  font-size: 2rem;
+  }
+.container-price *:last-child{
+  text-decoration: line-through;
+  color: #bababa;
+  font-size: 1.5rem;
+}
+
+.btn-second{
+  margin-top: 20px;
+
+}
+.btn-ask a{
+  border: 1px solid #29775D;
+  color: #29775D;
+  padding-left:24px;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.btn-ask {
+ color:#29775D;
+  border: 1px solid #29775D;
+  text-decoration:none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.list-stars{
+  display: inline;
+}
+.bullet{
+  margin-right: 10px;
+}
+.container-btn{
+  padding:24px;
+}
+
+
+.btn {
+  color:white;
+  background-color:#F07818;
+  text-decoration:none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 0;
+}
+.btn2 {
+  color:#29775D;
+  border: 1px solid #29775D;
+  text-decoration:none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 30px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.btn:hover{
+  color: white;
+}
+
+
+.container-favorite{
+  flex-wrap: wrap;
+  display: flex;
+  max-width: 100%;
+  padding:24px;
+  align-items: center;
+}
+.icon-size{
+  width:40px;
+  height:40px;
+  margin-right: 12px;
+}
+.container-favorite p{
+  margin-top: 10px;
+  margin-left: 12px;
+}
+.bloque-icon p{
+  font-size: 1rem;
+
+}
+.ask-seller{
+  padding: 20px;
+}
+
+.user-interaction{
+  /*display: flex;*/
+  max-width: 100%;
+  padding: 24px;
+  text-align: left;
+  border-block-end: 1px solid #000;
+}
+
+.cont2a{
+  position: relative;
+  align-items: center;
+}
+
+
+.cont2-user-name{
+  text-align: left;
+  /*font-size: 1.25rem;*/
+  font-weight: 700;
+}
+.cont2-2{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+.cont-img{
+  float: left;
+  overflow: hidden;
+  width: 42px;
+  height: 42px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 12px; 
+  cursor: pointer;
+}
+
+.container-all{
+  margin-inline: auto; 
+  max-width: 599px;
+}
+
+.bloque-producto-description{
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/*|||||||||||||||||||||||||||||||||||
+----------MBL MENOR de 599-----------
+|||||||||||||||||||||||||||||||||||*/
+@media screen and (max-width: 375px){
+
+  .container-all{
+  width: 375px; /*bloquea el ancho en fijo*/
+}
+
+}
+
+/*|||||||||||||||||||||||||||||||||||
+----------CSS DESKTOP-------------
+|||||||||||||||||||||||||||||||||||*/
+
+@media screen and (min-width: 600px) {
+
+.container-all{
+  margin-inline: auto; 
+  max-width: 700px;
+}
+
+.ficha-producto{
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: 1rem;
+  padding: 24px;
+}
+
+.bloque-producto-description{
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+
+.user-interaction,
+.bloque-producto,
+.container-btn,
+.container-favorite,
+.bloque-producto-description,
+.bloque-producto{
+  grid-column: 2/4;
+}
+
+}
+
+
+
+
+
